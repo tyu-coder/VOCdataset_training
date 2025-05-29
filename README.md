@@ -4,13 +4,19 @@
 
 # 环境依赖与数据结构
 1在官网上下载mmdetection（使用题目中给的链接），并安装配置兼容的mmengine,mmdet,mmcv环境
+
 2 下载SBD数据集https://aistudio.baidu.com/aistudio/datasetdetail/313791，将它放到mmdetection的data\SBD文件夹下，在mmdetection工作目录下执行python sbd_to_coco.py得到含有COCO格式的json文件的annotations文件夹
+
 3 将本目录下两个配置文件mask_rcnn_final.py和sparse_rcnn_final.py放到mmdetection的configs文件夹下
+
 4 在mmdetection工作目录下执行python tools/train.py configs/mask_rcnn_final.py以及python tools/train.py configs/sparse_rcnn_final.py即可开始训练
+
 本实验得到的tensorboard文件放在了tb_logs_mask_rcnn和tb_logs_sparse_rcnn文件夹中
 
 1 在mmdetection工作目录下执行python task2.py，便可以在output文件夹中得到实验报告中第二题的图片
+
 本实验得到的图片也放在了output文件夹中
 
 1 把imgs_task3文件夹放在mmdetection文件夹，在mmdetection工作目录下执行python task3.py，便可以在output文件夹中得到实验报告中第三题的图片
+
 本实验得到的图片也放在了output文件夹中
